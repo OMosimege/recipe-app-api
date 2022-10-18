@@ -1,5 +1,4 @@
-# recipe-app-api
-Recipe API project
+# Recipe API project
 
 Source code for our course: Build a [Backend REST API with Python & Django - Advanced](http://londonapp.dev/django-python-advanced).
 The course teaches how to build a fully functioning REST API using:
