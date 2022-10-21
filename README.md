@@ -16,6 +16,8 @@ docker-compose up
 The API will then be available at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 ## To run commands
+To run commands on terminal, use `docker-compose run --rm app sh -c "<command>"`
+e.g.
 ```
 docker-compose run --rm app sh -c "django-admin startproject app ."
 ```
