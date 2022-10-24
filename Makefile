@@ -1,6 +1,15 @@
 COMPOSE_DOCKER_CLI_BUILD=1
 DOCKER_BUILDKIT=1
 
+build:
+	@docker-compose build
+
+up:
+	@docker-compose up
+
+down:
+	@docker-compose down
+
 makemigrations:
 	@docker-compose run --rm app sh -c "python manage.py makemigrations"
 

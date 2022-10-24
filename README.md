@@ -1,7 +1,6 @@
 # Recipe API project
 
-Source code for our course: Build a [Backend REST API with Python & Django - Advanced](http://londonapp.dev/django-python-advanced).
-The course teaches how to build a fully functioning REST API using:
+Build a fully functioning REST API using:
 
 * Python
 * Django / Django-REST-Framework
@@ -16,8 +15,4 @@ docker-compose up
 The API will then be available at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 ## To run commands
-To run commands on terminal, use `docker-compose run --rm app sh -c "<command>"`
-e.g.
-```
-docker-compose run --rm app sh -c "django-admin startproject app ."
-```
+See Makefile
