@@ -26,7 +26,7 @@ SECRET_KEY = '$1wz3qpn^k1iwg!so)vz5(h3790x!um$!rn7y%#b@nldbi7tbl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'core',
     'user',
     'rest_framework',
+    'drf_spectacular',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
