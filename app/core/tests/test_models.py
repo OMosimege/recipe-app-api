@@ -50,14 +50,15 @@ class ModelTests(TestCase):
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
 
-    # def test_tag_str(self):
-    #     """Test the tag string representation"""
-    #     tag = models.Tag.objects.create(
-    #         user=sample_user(),
-    #         name='Vegan'
-    #     )
+    def test_tag_str(self):
+        """Test the tag string representation"""
 
-    #     self.assertEqual(str(tag), tag.name)
+        tag = models.Tag.objects.create(
+            user=sample_user(),
+            name='Vegan'
+        )
+
+        self.assertEqual(str(tag), tag.name)
 
     # def test_ingredient_str(self):
     #     """Test the ingredient string respresentation"""
@@ -68,16 +69,17 @@ class ModelTests(TestCase):
 
     #     self.assertEqual(str(ingredient), ingredient.name)
 
-    # def test_recipe_str(self):
-    #     """Test the recipe string representation"""
-    #     recipe = models.Recipe.objects.create(
-    #         user=sample_user(),
-    #         title='Steak and mushroom sauce',
-    #         time_minutes=5,
-    #         price=5.00
-    #     )
+    def test_recipe_str(self):
+        """Test the recipe string representation"""
 
-    #     self.assertEqual(str(recipe), recipe.title)
+        recipe = models.Recipe.objects.create(
+            user=sample_user(),
+            title='Steak and mushroom sauce',
+            time_minutes=5,
+            price=5.00
+        )
+
+        self.assertEqual(str(recipe), recipe.title)
 
     # @patch('uuid.uuid4')
     # def test_recipe_file_name_uuid(self, mock_uuid):
